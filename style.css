@@ -1,0 +1,328 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* background: #594ab5; */
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#banner
+{
+    /* z-index: -1; */
+    background: #594ab5;
+    height: 100vh;
+}
+
+#dd
+{
+    background: #594ab5;
+    height: 10vh;
+}
+.logo
+{
+    width: 140px;
+    position: absolute;
+    top: 4%;
+    left: 10%;
+}
+
+.globo
+{
+    width: 450px;
+    position: absolute;
+    right: 50px;
+    top: -100px;
+}
+
+.globo2
+{
+    width: 450px;
+    position: absolute;
+    left: -320px;
+    top: 90px;
+    rotate: -30deg;
+}
+
+.campamento
+{
+    width: 250px;
+    position: absolute;
+    left: 250px;
+    top: 150px;
+}
+
+.banner_btn
+{
+    top: 50px;
+    /* margin: 70px auto 0; */
+}
+
+.banner_btn a
+{
+    /* border-bottom-left-radius: 20px; */
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+    left: 550px;
+    top: 150px;
+    width: 150px;
+    text-decoration: none;
+    /* display: inline-block; */
+    margin: 0 10px;
+    padding: 12px 0;
+    color: #f5b57f;
+    border: 0.5px solid #f5b57f;
+    position: absolute;
+    z-index: 1;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.banner_btn a span
+{
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: #3a3174;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.banner_btn a:hover span
+{
+    width: 100%;
+}
+
+.banner_btn a span:hover
+{
+    color: #3a3174;
+}
+
+.nombre
+{
+    top: 220px;
+    left: 560px;
+    color: #f5b57f;
+    position: absolute;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+.discrip
+{
+    position: absolute;
+    top: 250px;
+    left: 560px;
+    color: #f5b57f;
+    width: 300px;
+}
+
+.discrip a
+{
+    font-size: 20px;
+    color: #f5b57f;
+}
+
+.skelet
+{
+    position: absolute;
+    top: 400px;
+    left: 150px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 250px;
+    color: #f5b57f;
+    font-weight: bold;
+}
+
+.pequeño
+{
+    position: absolute;
+    width: 150px;
+    top: 380px;
+    left: 380px;
+    z-index: 1;
+}
+
+
+
+.fecha
+{
+    position: absolute;
+    color: #f5b57f;
+    font-size: 20px;
+    font-weight: lighter;
+    top: 680px;
+    left: 100px;
+}
+
+.pais
+{
+    position: absolute;
+    color: #f5b57f;
+    font-size: 20px;
+    font-weight: lighter;
+    top: 680px;
+    left: 300px;
+}
+
+.circulo
+{
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    border-radius: 800px;
+    background-color: #7971af59;
+    -webkit-border-radius: 800px;
+    -moz-border-radius: 800px;
+    -ms-border-radius: 800px;
+    -o-border-radius: 800px;
+    right: -200px;
+    top: -220px;
+}
+
+
+#sidenav
+{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    background: #3a3174;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+
+
+nav ul li
+{
+    background: #3a3174;
+    list-style: none;
+    margin: 50px 28px;
+}
+
+nav ul li a
+{
+    background: #3a3174;
+    text-decoration: none;
+    color: #fff;
+}
+
+#menubtn
+{
+    border: solid 1px #f5b57f;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    text-align: center;
+    position: fixed;
+    /* right: 30px; */
+    left: 450px;
+    top: 30px;
+    border-radius: 50px;
+    z-index: 2;
+    cursor: pointer;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+#menubtn img
+{
+    width: 20px;
+    margin-top: 15px;
+}
+
+#menubtn h3
+{
+    position: absolute;
+    left: 70px;
+    top: 10px;
+    color: #f5b57f;
+}
+
+@media screen and (max-width: 770px)
+{
+    
+    body{
+        background-color: #594ab5;
+    }
+
+    .skelet
+    {
+        font-size: 120px;
+        left: 80px;
+        top: 800px;
+    }
+
+    .globo
+    {
+        left: 300px;
+        width: 400px;
+    }
+
+    .globo2
+    {
+        top: 200px;
+    }
+
+    .campamento
+    {
+        width: 150px;
+        left: 100px;
+        top: 150px;
+    }
+
+    .banner_btn a span
+    {
+        /* position: relative; */
+        left: 1000;
+    }
+
+    .pequeño
+    {
+        width: 50px;
+        top: 810px;
+        left: 200px;
+    }
+
+    .nombre
+    {
+        left: 300px;
+        top: 450px;
+    }
+
+    .discrip
+    {
+        left: 300px;
+        top: 540px;
+    }
+
+    .fecha
+    {
+        top: 1000px;
+    }
+    .pais
+    {
+        top: 1000px;
+        width: 200px;
+    }
+
+    .banner_btn
+    {
+        position: absolute;
+        top: 300px;
+        left: -40%;
+    }
+}
